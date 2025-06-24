@@ -9,7 +9,7 @@ def convert_to_fahrenheit(celsius) :
 def main():
     print("=== Temperature Converter ===")
 
-    temp = input('Enter the temprature : ').strip()
+    temp = input("Enter the temperature to convert:").strip()
     type = input("Is this temperature in Celsius or Fahrenheit? (C/F):").strip().upper()
 
     try:
