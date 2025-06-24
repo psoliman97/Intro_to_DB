@@ -10,7 +10,7 @@ def main():
     print("=== Temperature Converter ===")
 
     temp = input('Enter the temprature : ').strip()
-    type = input("Is this in Celsius or Fahrenheit? (C/F): ").strip().upper()
+    type = input("Is this temperature in Celsius or Fahrenheit? (C/F):").strip().upper()
 
     try:
         temprature = float(temp)
