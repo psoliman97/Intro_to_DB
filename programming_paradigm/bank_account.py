@@ -1,19 +1,17 @@
-class BankAccount :
-    def __init__(self,intial_balance=0) :
-        self.__account_balanc = intial_balance
+class BankAccount:
+    def __init__(self, initial_balance=0):
+        self.__account_balance = initial_balance  # Private attribute
 
-    def deposite(self, amount) :
-        if amount > 0 :
-            self.__account_balanc += amount
+    def deposit(self, amount):
+        if amount > 0:
+            self.__account_balance += amount
 
-    def withdrow (self, amount) :
-        if amount > 0 and self.__account_balanc >= amount:
-            self.__account_balanc -= amount
+    def withdraw(self, amount):
+        if amount > 0 and self.__account_balance >= amount:
+            self.__account_balance -= amount
             return True
         return False
-    
-    def display_balance (self) :
-        print(f"Current Balance : {self.__account_balanc}")
 
-
+    def display_balance(self):
+        print(f"Current Balance: ${self.__account_balance}")
         
